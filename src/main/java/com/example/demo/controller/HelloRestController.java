@@ -56,7 +56,7 @@ public class HelloRestController {
      *   "lastName":"nandiwadekar"
      *   }
      * http://localhost:8080/create-user
-     * @return user = rutu  nandiwadekar from bridgelabz
+     * @return user = rutu nandiwadekar from bridgelabz
      */
     @PostMapping("/create-user")
     public String createUser(@RequestBody User user) {
@@ -68,8 +68,8 @@ public class HelloRestController {
      * Make REST Call to show Hello Mark Taylor from BridgeLabz
      * - Use PUT Request Method and pass first name as Path Variable and last name as Query Parameter
      * - Use CURL to demonstrate the REST API Call
-     * http://localhost:8080/put/Rutu/?lastName= nandiwadekar
-     *  @return Hello Rutu  nandiwadekar from bridgelabz!
+     *  http://localhost:8080/put/Rutu/?lastName= nandiwadekar
+     *  @return Hello Rutu nandiwadekar from bridgelabz!
      */
     @PutMapping("/put/{firstName}")
     public String sayHello(@PathVariable String firstName, @RequestParam(value = "lastName") String lastName) {
